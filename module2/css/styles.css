@@ -12,7 +12,6 @@
 }
 
 .topic {
-	background-color: brown;
 	width: 33%;
 	position: absolute;
 	height: 30px;
@@ -21,6 +20,18 @@
 	border-bottom: 2px solid black;
 	border-left: 2px solid black;
 	text-align: center;
+}
+
+.container > .menu:nth-child(1) > .topic {
+	background-color: aquamarine;
+}
+
+.container > .menu:nth-child(2) > .topic {
+	background-color: brown;
+}
+
+.container > .menu:nth-child(3) > .topic {
+	background-color: yellowgreen;
 }
 
 .menu {
