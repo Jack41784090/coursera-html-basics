@@ -43,14 +43,18 @@ p {
 	clear: both;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+	.container {
+		padding: 10px;
+	}
+
 	section {
-		margin: 10px;
-		width: 95%;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 }
 
-@media (min-width: 576px) and (max-width: 1124px) {
+@media (min-width: 768px) and (max-width: 991px) {
 	.container {
 		position: relative;
 		padding: 10px;
@@ -60,20 +64,36 @@ p {
 		width: 49%;
 	}
 
-	section:nth-child(2) {
+	div > section:nth-child(2) {
 		position: absolute;
 		right: 10px;
 	}
 
 	section:nth-child(3) {
-		margin: 10px 0px 10px 0px;
+		margin-top: 10px;
 		width: 100%;
 	}
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 992px) {
+	.container {
+		position: relative;
+		padding: 10px;
+	}
+
 	section {
-		margin: 10px;
-		width: 31.45%;
+		width: 31%;
+	}
+
+	div > section:nth-child(2) {
+		position: absolute;
+		margin: auto;
+		left: 0px;
+		right: 0px;
+	}
+
+	section:nth-child(3) {
+		position: absolute;
+		right: 10px;
 	}
 }
