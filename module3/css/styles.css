@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+body {
+	background-color: aquamarine;
+}
+
+#header-nav {
+	background-color: silver;
+}
+
+#collapsable-nav {
+	text-align: center;
+}
+
+section {
+	background-color: azure;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+	.navbar-brand {
+		font-size: 5vw;
+	}
+
+	#collapsable-nav {
+		font-size: 20px;
+	}
+
+	div #collapsable-nav {
+		position: relative;
+		border: 1px solid black;
+	}
+
+	#collapsable-nav > ul > li > a {
+		border-top: 1px;
+		border-style: solid;
+		border-color: black;
+	}
+
+	.container {
+		margin: 20px;
+	}
+
+	section {
+		padding: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar-brand {
+		font-size: 35px;
+	}
+
+	section {
+		padding: 15px;
+	}
+}
