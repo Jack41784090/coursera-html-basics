@@ -31,17 +31,23 @@ WARNING!!! WARNING!!!
 
 (function () {
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  const arrayOfGreetings = [];
 
   for (let i = 0; i < names.length; i++)
   {
     const thisName = names[i];
+    let greet;
     if (thisName[0].toLocaleLowerCase() === 'j')
     {
-      window.byeSpeaker.speak(thisName);
+      greet = window.byeSpeaker.speak(thisName);
     }
     else
     {
-      window.helloSpeaker.speak(thisName);
+      greet = window.helloSpeaker.speak(thisName);
     }
+
+    arrayOfGreetings.push(greet);
   }
+
+  document.getElementById("demo").innerHTML = arrayOfGreetings.join("<br>");
 })();

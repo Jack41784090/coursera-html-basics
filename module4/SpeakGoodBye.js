@@ -2,7 +2,9 @@
   var speakWord = "Good Bye";
   var byeSpeaker = {
     speak: (name) => {
-      console.log(`${speakWord} ${name}`);
+      const greet = `${speakWord} ${name}`;
+      console.log(greet);
+      return greet;
     }
   };
 
